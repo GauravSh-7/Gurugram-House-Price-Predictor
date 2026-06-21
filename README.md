@@ -37,10 +37,10 @@ Real estate pricing in Gurugram varies significantly by locality and property si
 
 ## How It Works
 
-1. **Data loading & cleaning** — The raw dataset is loaded with Pandas. The `Price` column (originally formatted with commas as text) is converted to numeric, and the `Area` column is coerced to numeric as well. Rows with missing values in the relevant columns are dropped.
-2. **Feature encoding** — `Locality`, a categorical text field, is converted into numeric form using Scikit-Learn's `LabelEncoder` so it can be used as a model input.
-3. **Model training** — A `RandomForestRegressor` (100 estimators) is trained on `Area`, `Locality`, and `BHK_Count` as features, with `Price` as the target.
-4. **Prediction** — The Streamlit interface collects user input (area, BHK, locality) and feeds it to the trained model to return an estimated price in real time.
+1. **Data loading & cleaning** - The raw dataset is loaded with Pandas. The `Price` column (originally formatted with commas as text) is converted to numeric, and the `Area` column is coerced to numeric as well. Rows with missing values in the relevant columns are dropped.
+2. **Feature encoding** - `Locality`, a categorical text field, is converted into numeric form using Scikit-Learn's `LabelEncoder` so it can be used as a model input.
+3. **Model training** - A `RandomForestRegressor` (100 estimators) is trained on `Area`, `Locality`, and `BHK_Count` as features, with `Price` as the target.
+4. **Prediction** - The Streamlit interface collects user input (area, BHK, locality) and feeds it to the trained model to return an estimated price in real time.
 
 ## Project Structure
 
@@ -70,4 +70,4 @@ streamlit run app.py
 
 ## Author
 
-[Gaurav Sh.](https://github.com/GauravSh-7)
+[Gaurav](https://github.com/GauravSh-7)
